@@ -4,7 +4,7 @@ import { MaterialIcons } from '@expo/vector-icons';
 
 const Searchbar = ({ text, onTextChange, onTextSubmit }) => {
   return (
-    <View style={styles.searchBackground}>
+    <View style={styles.container}>
       <MaterialIcons name="search" style={styles.searchIcon} />
       <TextInput
         placeholder="Search"
@@ -20,12 +20,13 @@ const Searchbar = ({ text, onTextChange, onTextSubmit }) => {
 };
 
 const styles = StyleSheet.create({
-  searchBackground: {
+  container: {
     backgroundColor: '#f0eeee',
     height: 50,
     borderRadius: 5,
     margin: 15,
     flexDirection: 'row',
+    marginBottom: 10,
   },
 
   searchInput: {
